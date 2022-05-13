@@ -1,4 +1,6 @@
 from flask import Flask , render_template,request
+import pandas 
+import numpy
 import pickle
 
 loaded_model = pickle.load(open("model.pkl","rb"))
