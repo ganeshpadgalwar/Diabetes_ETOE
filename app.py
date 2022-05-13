@@ -1,7 +1,8 @@
 from flask import Flask , render_template,request
 import pickle
 
-loaded_model = pickle.load(open("artifacts\model.pkl","rb"))
+# loaded_model = pickle.load(open("artifacts\model.pkl","rb"))
+loaded_model = pickle.load(open("model.pkl","rb"))
 
 app = Flask(__name__)
 
