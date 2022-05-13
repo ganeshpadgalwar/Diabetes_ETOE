@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div { margin-bottom: 15px; text-align: center;}
+        label {
+          display: inline-block;
+          width: 180px;
+          text-align: right;}
+          #myDiv {margin-left: 180px;}
+          #pred_pos{color: #FF4500; } 
+          h1{text-align: center;}
+      </style>
+</head>
+<body style="background-color:skyblue;">
+
+<h1>Welcome to diabetes dignosis portal</h1>    
+<form method="POST" action="/predict">
+    <div><label>Pregnancies</label>
+        <input type="text" name = "Pregnancies" ></div>
+    <div><label>Glucose</label>
+            <input type="text" name = "Glucose" ></div>
+    <div><label>BloodPressure</label>
+        <input type="text" name = "BloodPressure" ></div>
+    <div><label>SkinThickness</label>
+        <input type="text" name = "SkinThickness" ></div>
+    <div><label>Insulin</label>
+        <input type="text" name = "Insulin" ></div>
+    <div><label>BMI</label>
+        <input type="text" name = "BMI" ></div>
+    <div><label>DiabetesPedigreeFunction</label>
+        <input type="text" name = "DiabetesPedigreeFunction" ></div>
+    <div><label>Age</label>
+        <input type="text" name = "Age" ></div>
+    <div id="myDiv">  
+    <input type="submit" name = "submit"> </div>  
+    <div id="pred_pos"> 
+        <h1>{{prediction}}</h1> </div>
+     
+
+</form>
+
+</body>
+</html>
